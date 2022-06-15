@@ -20,9 +20,10 @@ public class OrderService {
 	@Autowired
 	OrderRepository orderRepository;
 
-	public Result saveOrder(Order order) {
+	public int saveOrder(Order order) {
 		orderRepository.save(order);
-		return new Result(200, ErrorMessages.SAVE_SUCCESSFUL);
+		return 1;
+//		return new Result(200, ErrorMessages.SAVE_SUCCESSFUL);
 	}
 
 	public OrderCollectionsResult getOrdersByPincode(int pinCode) {
@@ -42,7 +43,7 @@ public class OrderService {
 
 	public OrderResult getOrdersById(String id) {
 		OrderResult orderResult = new OrderResult();
-		Optional<Order> result = orderRepository.findById(id);
+	    Optional<Order> result = orderRepository.findById(id);
 		if (result.get() != null) {
 			orderResult.setErrorCode(200);
 			orderResult.setErrorMessage(ErrorMessages.RETRIEVE_SUCCESSFUL);

@@ -1,0 +1,14 @@
+com\terra\assignment\entity\OrderResult.class
+com\terra\assignment\entity\OrderLine.class
+com\terra\assignment\dao\OrderRepository.class
+com\terra\assignment\service\OrderService.class
+com\terra\assignment\entity\ErrorMessages.class
+com\terra\assignment\entity\OrderStatus.class
+com\terra\assignment\entity\OrderLineStatus.class
+com\terra\assignment\entity\Address.class
+com\terra\assignment\OrderManagementApplication.class
+com\terra\assignment\entity\Item.class
+com\terra\assignment\entity\OrderCollectionsResult.class
+com\terra\assignment\controller\OrderController.class
+com\terra\assignment\entity\Result.class
+com\terra\assignment\entity\Order.class
